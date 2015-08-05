@@ -1,0 +1,67 @@
+2015-08-05 23:23:25.088 HelloCordova[29182:4034081] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Volumes/Transcend/Users/vasya/Library/Developer/CoreSimulator/Devices/5E30EF2C-20FE-4C2D-8BAC-C0037A03683E/data/Containers/Data/Application/52FB8A36-8B37-45A3-9400-3AA9F28F5F7F/Library/Cookies/Cookies.binarycookies
+2015-08-05 23:23:25.747 HelloCordova[29182:4034081] Apache Cordova native platform version 3.8.0 is starting.
+2015-08-05 23:23:25.748 HelloCordova[29182:4034081] Multi-tasking -> Device: YES, App: YES
+2015-08-05 23:23:25.780 HelloCordova[29182:4034081] Unlimited access to network resources
+2015-08-05 23:23:25.795 HelloCordova[29182:4034081] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-08-05 23:23:27.334 HelloCordova[29182:4034081] Resetting plugins due to page load.
+2015-08-05 23:23:27.629 HelloCordova[29182:4034081] Finished load of: file:///Volumes/Transcend/Users/vasya/Library/Developer/CoreSimulator/Devices/5E30EF2C-20FE-4C2D-8BAC-C0037A03683E/data/Containers/Bundle/Application/534F7E6B-771D-44AD-917B-C5BA3CBAB95F/HelloCordova.app/www/index.html
+2015-08-05 23:35:00.639 HelloCordova[29568:4046667] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Volumes/Transcend/Users/vasya/Library/Developer/CoreSimulator/Devices/5E30EF2C-20FE-4C2D-8BAC-C0037A03683E/data/Containers/Data/Application/DD900B2D-F40D-4D01-899C-CBEA78B842A7/Library/Cookies/Cookies.binarycookies
+2015-08-05 23:35:01.204 HelloCordova[29568:4046667] Apache Cordova native platform version 3.8.0 is starting.
+2015-08-05 23:35:01.207 HelloCordova[29568:4046667] Multi-tasking -> Device: YES, App: YES
+2015-08-05 23:35:01.238 HelloCordova[29568:4046667] Unlimited access to network resources
+2015-08-05 23:35:01.259 HelloCordova[29568:4046667] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-08-05 23:35:02.355 HelloCordova[29568:4046667] Resetting plugins due to page load.
+2015-08-05 23:35:02.607 HelloCordova[29568:4046667] Finished load of: file:///Volumes/Transcend/Users/vasya/Library/Developer/CoreSimulator/Devices/5E30EF2C-20FE-4C2D-8BAC-C0037A03683E/data/Containers/Bundle/Application/CAE1EEA4-33FB-43FA-9263-7F9601C11797/HelloCordova.app/www/index.html
+2015-08-05 23:36:44.939 HelloCordova[29568:4048264] Communications error: <OS_xpc_error: <error: 0x2e0c5f4> { count = 1, contents =
+	"XPCErrorDescription" => <string: 0x2e0c83c> { length = 22, contents = "Connection interrupted" }
+}>
+2015-08-05 23:42:55.469 HelloCordova[29750:4054031] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Volumes/Transcend/Users/vasya/Library/Developer/CoreSimulator/Devices/5E30EF2C-20FE-4C2D-8BAC-C0037A03683E/data/Containers/Data/Application/539E22C5-83F3-474A-BD0E-84A1342EA81F/Library/Cookies/Cookies.binarycookies
+2015-08-05 23:42:56.161 HelloCordova[29750:4054031] Apache Cordova native platform version 3.8.0 is starting.
+2015-08-05 23:42:56.162 HelloCordova[29750:4054031] Multi-tasking -> Device: YES, App: YES
+2015-08-05 23:42:56.193 HelloCordova[29750:4054031] Unlimited access to network resources
+2015-08-05 23:42:56.211 HelloCordova[29750:4054031] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-08-05 23:42:57.257 HelloCordova[29750:4054031] Resetting plugins due to page load.
+2015-08-05 23:42:57.537 HelloCordova[29750:4054031] Finished load of: file:///Volumes/Transcend/Users/vasya/Library/Developer/CoreSimulator/Devices/5E30EF2C-20FE-4C2D-8BAC-C0037A03683E/data/Containers/Bundle/Application/1996695A-D852-42F1-AFCE-F2F121032189/HelloCordova.app/www/index.html
+2015-08-05 23:45:20.248 HelloCordova[29835:4055545] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Volumes/Transcend/Users/vasya/Library/Developer/CoreSimulator/Devices/5E30EF2C-20FE-4C2D-8BAC-C0037A03683E/data/Containers/Data/Application/AC734904-4A63-4A65-97E3-0FF1E1E019CB/Library/Cookies/Cookies.binarycookies
+2015-08-05 23:45:20.398 HelloCordova[29835:4055545] Apache Cordova native platform version 3.8.0 is starting.
+2015-08-05 23:45:20.398 HelloCordova[29835:4055545] Multi-tasking -> Device: YES, App: YES
+2015-08-05 23:45:20.402 HelloCordova[29835:4055545] Unlimited access to network resources
+2015-08-05 23:45:20.408 HelloCordova[29835:4055545] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-08-05 23:45:20.694 HelloCordova[29835:4055545] Resetting plugins due to page load.
+2015-08-05 23:45:20.789 HelloCordova[29835:4055545] Finished load of: file:///Volumes/Transcend/Users/vasya/Library/Developer/CoreSimulator/Devices/5E30EF2C-20FE-4C2D-8BAC-C0037A03683E/data/Containers/Bundle/Application/644AE370-8BBA-4F5C-A213-D1935B414A8E/HelloCordova.app/www/index.html
+2015-08-05 23:45:20.848 HelloCordova[29835:4055545] VK init error!
+2015-08-05 23:45:20.848 HelloCordova[29835:4055545] SocialVk Plugin initalized
+2015-08-05 23:45:23.948 HelloCordova[29835:4055545] THREAD WARNING: ['SocialVk'] took '3103.956055' ms. Plugin should use a background thread.
+2015-08-05 23:45:23.977 HelloCordova[29835:4055545] SocialOk Plugin initalized
+2015-08-05 23:45:25.957 HelloCordova[29835:4055545] THREAD WARNING: ['SocialOk'] took '1979.819092' ms. Plugin should use a background thread.
+2015-08-05 23:48:00.307 HelloCordova[29835:4057269] Communications error: <OS_xpc_error: <error: 0x2db25f4> { count = 1, contents =
+	"XPCErrorDescription" => <string: 0x2db283c> { length = 22, contents = "Connection interrupted" }
+}>

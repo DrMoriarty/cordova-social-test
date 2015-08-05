@@ -1,0 +1,44 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "org.apache.cordova.device": {
+        "source": {
+            "type": "local",
+            "path": "/Applications/Intel XDK.app/Contents/Resources/app.nw/components/server/cordova-plugins/org.apache.cordova.device"
+        }
+    },
+    "org.apache.cordova.splashscreen": {
+        "source": {
+            "type": "local",
+            "path": "/Applications/Intel XDK.app/Contents/Resources/app.nw/components/server/cordova-plugins/org.apache.cordova.splashscreen"
+        }
+    },
+    "ru.trilan.cordova-social-vk": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/DrMoriarty/cordova-social-vk.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {
+            "VK_APP_ID": "4869256"
+        }
+    },
+    "ru.trilan.cordova-social-ok": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/DrMoriarty/cordova-social-ok.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {
+            "OK_APP_ID": "198971648"
+        }
+    }
+}

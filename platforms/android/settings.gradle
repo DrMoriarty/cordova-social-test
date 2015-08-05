@@ -1,0 +1,4 @@
+// GENERATED FILE - DO NOT EDIT
+include ":"
+include ":CordovaLib"
+include ":ru.trilan.cordova-social-vk:hellocordova-vksdk_library"
