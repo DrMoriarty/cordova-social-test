@@ -11,6 +11,14 @@
                         {
                             "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -19,11 +27,11 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<feature name=\"SocialVk\"><param name=\"android-package\" value=\"ru.trilan.socialvk.SocialVk\" /></feature>",
+                            "xml": "<feature name=\"SocialOk\"><param name=\"android-package\" value=\"ru.trilan.socialok.SocialOk\" /></feature>",
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"SocialOk\"><param name=\"android-package\" value=\"ru.trilan.socialok.SocialOk\" /></feature>",
+                            "xml": "<feature name=\"SocialVk\"><param name=\"android-package\" value=\"ru.trilan.socialvk.SocialVk\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -33,15 +41,24 @@
                 "parents": {
                     "/manifest/application": [
                         {
-                            "xml": "<activity android:name=\"com.vk.sdk.VKOpenAuthActivity\"></activity>",
+                            "xml": "<activity android:configChanges=\"orientation\" android:launchMode=\"singleTask\" android:name=\"ru.ok.android.sdk.OkAuthActivity\"><intent-filter><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /><data android:host=\"ok198971648\" android:scheme=\"okauth\" /></intent-filter></activity>",
                             "count": 1
                         },
                         {
-                            "xml": "<activity android:configChanges=\"orientation\" android:launchMode=\"singleTask\" android:name=\"ru.ok.android.sdk.OkAuthActivity\"><intent-filter><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /><data android:host=\"ok198971648\" android:scheme=\"okauth\" /></intent-filter></activity>",
+                            "xml": "<activity android:name=\"com.vk.sdk.VKOpenAuthActivity\"></activity>",
                             "count": 1
                         }
-                    ],
-                    "manifest/application": []
+                    ]
+                }
+            },
+            "res/values/strings.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<integer name=\"com_vk_sdk_AppId\">5027289</integer>",
+                            "count": 1
+                        }
+                    ]
                 }
             }
         }
@@ -50,13 +67,18 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
-        "org.apache.cordova.device": {},
-        "org.apache.cordova.splashscreen": {},
-        "ru.trilan.cordova-social-vk": {
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.apache.cordova.splashscreen": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
         "ru.trilan.cordova-social-ok": {
             "OK_APP_ID": "198971648",
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "ru.trilan.cordova-social-vk": {
+            "VK_APP_ID": "5027289",
             "PACKAGE_NAME": "io.cordova.hellocordova"
         }
     },

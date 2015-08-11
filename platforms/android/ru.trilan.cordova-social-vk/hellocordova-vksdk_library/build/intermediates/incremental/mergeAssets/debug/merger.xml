@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Volumes/Transcend/Users/vasya/projects/cordova-social-test/platforms/android/ru.trilan.cordova-social-vk/hellocordova-vksdk_library/assets"/></dataSet><dataSet config="debug"><source path="/Volumes/Transcend/Users/vasya/projects/cordova-social-test/platforms/android/ru.trilan.cordova-social-vk/hellocordova-vksdk_library/src/debug/assets"/></dataSet></merger>

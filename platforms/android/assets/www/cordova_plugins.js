@@ -20,17 +20,17 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/ru.trilan.cordova-social-vk/www/social-vk.js",
-        "id": "ru.trilan.cordova-social-vk.SocialVk",
-        "clobbers": [
-            "SocialVk"
-        ]
-    },
-    {
         "file": "plugins/ru.trilan.cordova-social-ok/www/social-ok.js",
         "id": "ru.trilan.cordova-social-ok.SocialOk",
         "clobbers": [
             "SocialOk"
+        ]
+    },
+    {
+        "file": "plugins/ru.trilan.cordova-social-vk/www/social-vk.js",
+        "id": "ru.trilan.cordova-social-vk.SocialVk",
+        "clobbers": [
+            "SocialVk"
         ]
     }
 ];
@@ -40,8 +40,8 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.0.0",
     "org.apache.cordova.device": "0.2.13",
     "org.apache.cordova.splashscreen": "0.3.5",
-    "ru.trilan.cordova-social-vk": "1.0.0",
-    "ru.trilan.cordova-social-ok": "1.0.0"
+    "ru.trilan.cordova-social-ok": "1.0.0",
+    "ru.trilan.cordova-social-vk": "1.0.0"
 }
 // BOTTOM OF METADATA
 });

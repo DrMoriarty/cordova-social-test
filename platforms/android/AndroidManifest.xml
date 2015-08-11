@@ -11,7 +11,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.vk.sdk.VKOpenAuthActivity" />
         <activity android:configChanges="orientation" android:launchMode="singleTask" android:name="ru.ok.android.sdk.OkAuthActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -20,6 +19,7 @@
                 <data android:host="ok198971648" android:scheme="okauth" />
             </intent-filter>
         </activity>
+        <activity android:name="com.vk.sdk.VKOpenAuthActivity" />
     </application>
     <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="22" />
 </manifest>

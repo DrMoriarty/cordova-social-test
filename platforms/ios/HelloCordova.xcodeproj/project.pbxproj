@@ -6,6 +6,7 @@
 	objectVersion = 46;
 	objects = {
 /* Begin PBXBuildFile section */
+		0C71D2540437438C84400B87 /* OKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E10CE15AF3C24A3EB8E6A666 /* OKRequest.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
@@ -27,7 +28,9 @@
 		30B4F30219D5E07200D9F7D8 /* Default-Landscape-736h.png in Resources */ = {isa = PBXBuildFile; fileRef = 30B4F2FF19D5E07200D9F7D8 /* Default-Landscape-736h.png */; };
 		30C1856619D5FC0A00212699 /* icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C1856519D5FC0A00212699 /* icon-60@3x.png */; };
 		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
+		399D43D52FE446CC833DB9F8 /* NSString+OKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C9025B367A624B3B894E4EE8 /* NSString+OKUtils.m */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
+		63731DE0A42B4E6799384274 /* OKTokenCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AC484297B9D74C60BFCE4E1C /* OKTokenCache.m */; };
 		7E7966DE1810823500FA85AD /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D41810823500FA85AD /* icon-40.png */; };
 		7E7966DF1810823500FA85AD /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D51810823500FA85AD /* icon-40@2x.png */; };
 		7E7966E01810823500FA85AD /* icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D61810823500FA85AD /* icon-50.png */; };
@@ -38,17 +41,15 @@
 		7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DB1810823500FA85AD /* icon-76@2x.png */; };
 		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
-		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
-		0BB4CC008F64472295034662 /* SocialVk.m in Sources */ = {isa = PBXBuildFile; fileRef = 43748665BD3B4EA8814CB57C /* SocialVk.m */; };
-		1AE43345CC5A47B0AE7C4EE7 /* VKSdkResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3EB10F113F2E4D5B87923A4C /* VKSdkResources.bundle */; };
-		3240C22908CE4D1B98B562DB /* VKontakte.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC6D95F666C44C8D9506C9B6 /* VKontakte.framework */; };
-		B494DAF5150D4EFCA4657B27 /* SocialOk.m in Sources */ = {isa = PBXBuildFile; fileRef = 9450FC3CB81B4B15A747791A /* SocialOk.m */; };
-		399D43D52FE446CC833DB9F8 /* NSString+OKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C9025B367A624B3B894E4EE8 /* NSString+OKUtils.m */; };
-		0C71D2540437438C84400B87 /* OKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E10CE15AF3C24A3EB8E6A666 /* OKRequest.m */; };
-		E9EFCB7E752F4E2981023561 /* OKSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F03FF98116646F08F2E55E9 /* OKSession.m */; };
-		63731DE0A42B4E6799384274 /* OKTokenCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AC484297B9D74C60BFCE4E1C /* OKTokenCache.m */; };
-		9E3A0160729A4619B1720230 /* Odnoklassniki.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA7D1E24884521A6EEA6F1 /* Odnoklassniki.m */; };
 		95916ECBFE7B4DE4B9045969 /* OKFriends.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9626CE4D5C4C88B3BAED90 /* OKFriends.m */; };
+		9E3A0160729A4619B1720230 /* Odnoklassniki.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA7D1E24884521A6EEA6F1 /* Odnoklassniki.m */; };
+		B494DAF5150D4EFCA4657B27 /* SocialOk.m in Sources */ = {isa = PBXBuildFile; fileRef = 9450FC3CB81B4B15A747791A /* SocialOk.m */; };
+		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
+		E9EFCB7E752F4E2981023561 /* OKSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F03FF98116646F08F2E55E9 /* OKSession.m */; };
+		A120D76559614A88AC8D84E4 /* SocialVk.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7C579246A446D0A3D982B6 /* SocialVk.m */; };
+		7DFA6FFE7EBB4262A8E017FB /* NSData+Base64.h in Resources */ = {isa = PBXBuildFile; fileRef = 40805B3F348F417FB9DF0085 /* NSData+Base64.h */; };
+		05437886C77B4E9C9E4B86CF /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C9E1741FCF46C08852CBCA /* NSData+Base64.m */; };
+		B7A169F0688F47018E2C4EB0 /* VKSdkResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 402329091BD84534A6F8C0CA /* VKSdkResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,13 +70,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1431DF466A8645B884EC896C /* OKRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OKRequest.h; path = "ru.trilan.cordova-social-ok/OKRequest.h"; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* HelloCordova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HelloCordova.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F766FDD13BBADB100FB74C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
-		1F766FE013BBADB100FB74C0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Localizable.strings; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* HelloCordova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCordova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B09DD92C6BF4A04B8F9152B /* VKSdkResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = VKSdkResources.bundle; sourceTree = "<group>"; };
+		2BDEF44075A94D48A307F684 /* VKSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VKSdk.framework; path = "HelloCordova/Plugins/ru.trilan.cordova-social-vk/VKSdk.framework"; sourceTree = "<group>"; };
+		2DEA7D1E24884521A6EEA6F1 /* Odnoklassniki.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Odnoklassniki.m; path = "ru.trilan.cordova-social-ok/Odnoklassniki.m"; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -97,7 +100,12 @@
 		30C1856519D5FC0A00212699 /* icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@3x.png"; sourceTree = "<group>"; };
 		30FC414816E50CA1004E6F35 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* HelloCordova-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HelloCordova-Prefix.pch"; sourceTree = "<group>"; };
+		414EDC2CA20E4237A2376A2F /* OKTokenCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OKTokenCache.h; path = "ru.trilan.cordova-social-ok/OKTokenCache.h"; sourceTree = "<group>"; };
+		42FF258A073C43D2A0BA0A1C /* NSString+OKUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+OKUtils.h"; path = "ru.trilan.cordova-social-ok/NSString+OKUtils.h"; sourceTree = "<group>"; };
+		4F03FF98116646F08F2E55E9 /* OKSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OKSession.m; path = "ru.trilan.cordova-social-ok/OKSession.m"; sourceTree = "<group>"; };
 		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		5FE719C16CD64094B649EE15 /* VKSdkResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = VKSdkResources.bundle; sourceTree = "<group>"; };
+		618893DE5DAE4C4F97D6B7AF /* OKFriends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OKFriends.h; path = "ru.trilan.cordova-social-ok/OKFriends.h"; sourceTree = "<group>"; };
 		7E7966D41810823500FA85AD /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40.png"; sourceTree = "<group>"; };
 		7E7966D51810823500FA85AD /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
 		7E7966D61810823500FA85AD /* icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-50.png"; sourceTree = "<group>"; };
@@ -108,30 +116,25 @@
 		7E7966DB1810823500FA85AD /* icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76@2x.png"; sourceTree = "<group>"; };
 		7E7966DC1810823500FA85AD /* icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small.png"; sourceTree = "<group>"; };
 		7E7966DD1810823500FA85AD /* icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small@2x.png"; sourceTree = "<group>"; };
+		8B271E24EED7482BA1D50E44 /* OKSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OKSession.h; path = "ru.trilan.cordova-social-ok/OKSession.h"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* HelloCordova-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "HelloCordova-Info.plist"; path = "../HelloCordova-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		9450FC3CB81B4B15A747791A /* SocialOk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialOk.m; path = "ru.trilan.cordova-social-ok/SocialOk.m"; sourceTree = "<group>"; };
+		AC484297B9D74C60BFCE4E1C /* OKTokenCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OKTokenCache.m; path = "ru.trilan.cordova-social-ok/OKTokenCache.m"; sourceTree = "<group>"; };
+		C9025B367A624B3B894E4EE8 /* NSString+OKUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+OKUtils.m"; path = "ru.trilan.cordova-social-ok/NSString+OKUtils.m"; sourceTree = "<group>"; };
+		D3EEF345134E4A9CABAA6F21 /* SocialOk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialOk.h; path = "ru.trilan.cordova-social-ok/SocialOk.h"; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
+		D83F348F01D84131AC66FBA2 /* Odnoklassniki.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Odnoklassniki.h; path = "ru.trilan.cordova-social-ok/Odnoklassniki.h"; sourceTree = "<group>"; };
+		DD9626CE4D5C4C88B3BAED90 /* OKFriends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OKFriends.m; path = "ru.trilan.cordova-social-ok/OKFriends.m"; sourceTree = "<group>"; };
+		E10CE15AF3C24A3EB8E6A666 /* OKRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OKRequest.m; path = "ru.trilan.cordova-social-ok/OKRequest.m"; sourceTree = "<group>"; };
 		EB87FDF21871DA7A0020F90C /* merges */ = {isa = PBXFileReference; lastKnownFileType = folder; name = merges; path = ../../merges; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
-		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "HelloCordova/config.xml"; sourceTree = "<group>"; };
-		43748665BD3B4EA8814CB57C /* SocialVk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "SocialVk.m"; path = "ru.trilan.cordova-social-vk/SocialVk.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		DB1C2A06413F4B07AB1403E7 /* SocialVk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SocialVk.h"; path = "ru.trilan.cordova-social-vk/SocialVk.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		3EB10F113F2E4D5B87923A4C /* VKSdkResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "VKSdkResources.bundle"; path = "VKSdkResources.bundle"; sourceTree = "<group>"; };
-		CC6D95F666C44C8D9506C9B6 /* VKontakte.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "VKontakte.framework"; path = "HelloCordova/Plugins/ru.trilan.cordova-social-vk/VKontakte.framework"; sourceTree = "<group>"; };
-		9450FC3CB81B4B15A747791A /* SocialOk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "SocialOk.m"; path = "ru.trilan.cordova-social-ok/SocialOk.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		C9025B367A624B3B894E4EE8 /* NSString+OKUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+OKUtils.m"; path = "ru.trilan.cordova-social-ok/NSString+OKUtils.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		E10CE15AF3C24A3EB8E6A666 /* OKRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "OKRequest.m"; path = "ru.trilan.cordova-social-ok/OKRequest.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		4F03FF98116646F08F2E55E9 /* OKSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "OKSession.m"; path = "ru.trilan.cordova-social-ok/OKSession.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		AC484297B9D74C60BFCE4E1C /* OKTokenCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "OKTokenCache.m"; path = "ru.trilan.cordova-social-ok/OKTokenCache.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		2DEA7D1E24884521A6EEA6F1 /* Odnoklassniki.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Odnoklassniki.m"; path = "ru.trilan.cordova-social-ok/Odnoklassniki.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		DD9626CE4D5C4C88B3BAED90 /* OKFriends.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "OKFriends.m"; path = "ru.trilan.cordova-social-ok/OKFriends.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		D3EEF345134E4A9CABAA6F21 /* SocialOk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SocialOk.h"; path = "ru.trilan.cordova-social-ok/SocialOk.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		42FF258A073C43D2A0BA0A1C /* NSString+OKUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+OKUtils.h"; path = "ru.trilan.cordova-social-ok/NSString+OKUtils.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		1431DF466A8645B884EC896C /* OKRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "OKRequest.h"; path = "ru.trilan.cordova-social-ok/OKRequest.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		8B271E24EED7482BA1D50E44 /* OKSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "OKSession.h"; path = "ru.trilan.cordova-social-ok/OKSession.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		414EDC2CA20E4237A2376A2F /* OKTokenCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "OKTokenCache.h"; path = "ru.trilan.cordova-social-ok/OKTokenCache.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		D83F348F01D84131AC66FBA2 /* Odnoklassniki.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Odnoklassniki.h"; path = "ru.trilan.cordova-social-ok/Odnoklassniki.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		618893DE5DAE4C4F97D6B7AF /* OKFriends.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "OKFriends.h"; path = "ru.trilan.cordova-social-ok/OKFriends.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = HelloCordova/config.xml; sourceTree = "<group>"; };
+		DB7C579246A446D0A3D982B6 /* SocialVk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "SocialVk.m"; path = "ru.trilan.cordova-social-vk/SocialVk.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		40805B3F348F417FB9DF0085 /* NSData+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "ru.trilan.cordova-social-vk/NSData+Base64.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		21C9E1741FCF46C08852CBCA /* NSData+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "ru.trilan.cordova-social-vk/NSData+Base64.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		37846F33A77E40ACA284FA9E /* SocialVk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SocialVk.h"; path = "ru.trilan.cordova-social-vk/SocialVk.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		402329091BD84534A6F8C0CA /* VKSdkResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "VKSdkResources.bundle"; path = "VKSdkResources.bundle"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +146,6 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
-				3240C22908CE4D1B98B562DB /* VKontakte.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +162,7 @@
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
 			);
 			name = Classes;
-			path = "HelloCordova/Classes";
+			path = HelloCordova/Classes;
 			sourceTree = SOURCE_ROOT;
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -196,7 +198,7 @@
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
-			path = "HelloCordova";
+			path = HelloCordova;
 			sourceTree = "<group>";
 		};
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
@@ -205,10 +207,12 @@
 				308D052D1370CCF300D202BF /* icons */,
 				308D05311370CCF300D202BF /* splash */,
 				8D1107310486CEB800E47090 /* HelloCordova-Info.plist */,
-				3EB10F113F2E4D5B87923A4C /* VKSdkResources.bundle */,
+				5FE719C16CD64094B649EE15 /* VKSdkResources.bundle */,
+				2B09DD92C6BF4A04B8F9152B /* VKSdkResources.bundle */,
+				402329091BD84534A6F8C0CA /* VKSdkResources.bundle */,
 			);
 			name = Resources;
-			path = "HelloCordova/Resources";
+			path = HelloCordova/Resources;
 			sourceTree = "<group>";
 		};
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
@@ -217,7 +221,7 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
-				CC6D95F666C44C8D9506C9B6 /* VKontakte.framework */,
+				2BDEF44075A94D48A307F684 /* VKSdk.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -233,8 +237,6 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				43748665BD3B4EA8814CB57C /* SocialVk.m */,
-				DB1C2A06413F4B07AB1403E7 /* SocialVk.h */,
 				9450FC3CB81B4B15A747791A /* SocialOk.m */,
 				C9025B367A624B3B894E4EE8 /* NSString+OKUtils.m */,
 				E10CE15AF3C24A3EB8E6A666 /* OKRequest.m */,
@@ -249,9 +251,13 @@
 				414EDC2CA20E4237A2376A2F /* OKTokenCache.h */,
 				D83F348F01D84131AC66FBA2 /* Odnoklassniki.h */,
 				618893DE5DAE4C4F97D6B7AF /* OKFriends.h */,
+				DB7C579246A446D0A3D982B6 /* SocialVk.m */,
+				40805B3F348F417FB9DF0085 /* NSData+Base64.h */,
+				21C9E1741FCF46C08852CBCA /* NSData+Base64.m */,
+				37846F33A77E40ACA284FA9E /* SocialVk.h */,
 			);
 			name = Plugins;
-			path = "HelloCordova/Plugins";
+			path = HelloCordova/Plugins;
 			sourceTree = SOURCE_ROOT;
 		};
 		308D052D1370CCF300D202BF /* icons */ = {
@@ -319,8 +325,8 @@
 			dependencies = (
 				301BF551109A68C00062928A /* PBXTargetDependency */,
 			);
-			name = "HelloCordova";
-			productName = "HelloCordova";
+			name = HelloCordova;
+			productName = HelloCordova;
 			productReference = 1D6058910D05DD3D006BFB54 /* HelloCordova.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -332,7 +338,7 @@
 			attributes = {
 				LastUpgradeCheck = 510;
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "__CLI__" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "HelloCordova" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -402,7 +408,7 @@
 				7E7966E11810823500FA85AD /* icon-50@2x.png in Resources */,
 				7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */,
 				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
-				1AE43345CC5A47B0AE7C4EE7 /* VKSdkResources.bundle in Resources */,
+				B7A169F0688F47018E2C4EB0 /* VKSdkResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +440,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				0BB4CC008F64472295034662 /* SocialVk.m in Sources */,
 				B494DAF5150D4EFCA4657B27 /* SocialOk.m in Sources */,
 				399D43D52FE446CC833DB9F8 /* NSString+OKUtils.m in Sources */,
 				0C71D2540437438C84400B87 /* OKRequest.m in Sources */,
@@ -442,6 +447,10 @@
 				63731DE0A42B4E6799384274 /* OKTokenCache.m in Sources */,
 				9E3A0160729A4619B1720230 /* Odnoklassniki.m in Sources */,
 				95916ECBFE7B4DE4B9045969 /* OKFriends.m in Sources */,
+				00615C0C4A8247D1B063C944 /* NSData+Base64.h in Sources */,
+				A120D76559614A88AC8D84E4 /* SocialVk.m in Sources */,
+				7DFA6FFE7EBB4262A8E017FB /* NSData+Base64.h in Resources */,
+				05437886C77B4E9C9E4B86CF /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +471,40 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"$(PROJECT_DIR)/HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -482,19 +525,8 @@
 					"-weak-lSystem",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "HelloCordova";
+				PRODUCT_NAME = HelloCordova;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"HelloCordova/Plugins/ru.trilan.cordova-social-vk\"",
-					"\"HelloCordova/Plugins/ru.trilan.cordova-social-vk\"",
-					"\"HelloCordova/Plugins/ru.trilan.cordova-social-vk\"",
-					"\"HelloCordova/Plugins/ru.trilan.cordova-social-vk\"",
-					"\"HelloCordova/Plugins/ru.trilan.cordova-social-vk\"",
-					"\"HelloCordova/Plugins/ru.trilan.cordova-social-vk\"",
-					"\"HelloCordova/Plugins/ru.trilan.cordova-social-vk\"",
-					"\"HelloCordova/Plugins/ru.trilan.cordova-social-vk\"",
-				);
 			};
 			name = Debug;
 		};
@@ -504,6 +536,40 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+					"$(PROJECT_DIR)/HelloCordova/Plugins/ru.trilan.cordova-social-vk",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloCordova/HelloCordova-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
@@ -522,19 +588,8 @@
 					"-weak-lSystem",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "HelloCordova";
+				PRODUCT_NAME = HelloCordova;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"HelloCordova/Plugins/ru.trilan.cordova-social-vk\"",
-					"\"HelloCordova/Plugins/ru.trilan.cordova-social-vk\"",
-					"\"HelloCordova/Plugins/ru.trilan.cordova-social-vk\"",
-					"\"HelloCordova/Plugins/ru.trilan.cordova-social-vk\"",
-					"\"HelloCordova/Plugins/ru.trilan.cordova-social-vk\"",
-					"\"HelloCordova/Plugins/ru.trilan.cordova-social-vk\"",
-					"\"HelloCordova/Plugins/ru.trilan.cordova-social-vk\"",
-					"\"HelloCordova/Plugins/ru.trilan.cordova-social-vk\"",
-				);
 			};
 			name = Release;
 		};
@@ -637,7 +692,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "__CLI__" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "HelloCordova" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,

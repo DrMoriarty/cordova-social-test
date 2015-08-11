@@ -9,11 +9,11 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<feature name=\"SocialVk\"><param name=\"ios-package\" value=\"SocialVk\" /></feature>",
+                            "xml": "<feature name=\"SocialOk\"><param name=\"ios-package\" value=\"SocialOk\" /></feature>",
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"SocialOk\"><param name=\"ios-package\" value=\"SocialOk\" /></feature>",
+                            "xml": "<feature name=\"SocialVk\"><param name=\"ios-package\" value=\"SocialVk\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -23,7 +23,7 @@
                 "parents": {
                     "CFBundleURLTypes": [
                         {
-                            "xml": "<array><dict><key>CFBundleTypeRole</key><string>Editor</string><key>CFBundleURLName</key><string>4869256</string><key>CFBundleURLSchemes</key><array><string>4869256</string></array></dict></array>",
+                            "xml": "<array><dict><key>CFBundleTypeRole</key><string>Editor</string><key>CFBundleURLName</key><string>vk5027289</string><key>CFBundleURLSchemes</key><array><string>vk5027289</string></array></dict></array>",
                             "count": 1
                         }
                     ]
@@ -35,11 +35,11 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
-        "ru.trilan.cordova-social-vk": {
-            "VK_APP_ID": "4869256",
+        "ru.trilan.cordova-social-ok": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         },
-        "ru.trilan.cordova-social-ok": {
+        "ru.trilan.cordova-social-vk": {
+            "VK_APP_ID": "5027289",
             "PACKAGE_NAME": "io.cordova.hellocordova"
         }
     },
