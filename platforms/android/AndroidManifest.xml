@@ -11,15 +11,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:configChanges="orientation" android:launchMode="singleTask" android:name="ru.ok.android.sdk.OkAuthActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:host="ok198971648" android:scheme="okauth" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.vk.sdk.VKOpenAuthActivity" />
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="b958fa8463b9a6b1b25480a0a4c2bf015c93c94a" />
     </application>
     <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="22" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
 </manifest>

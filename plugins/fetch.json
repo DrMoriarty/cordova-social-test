@@ -19,25 +19,23 @@
             "path": "/Applications/Intel XDK.app/Contents/Resources/app.nw/components/server/cordova-plugins/org.apache.cordova.splashscreen"
         }
     },
-    "ru.trilan.cordova-social-ok": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/DrMoriarty/cordova-social-ok.git",
-            "subdir": "."
-        },
-        "is_top_level": true,
-        "variables": {
-            "OK_APP_ID": "198971648"
-        }
-    },
-    "ru.trilan.cordova-social-vk": {
+    "org.apache.cordova.crashlytics": {
         "source": {
             "type": "local",
-            "path": "../cordova-social-vk"
+            "path": "../cordova-fabric-crashlytics-plugin"
         },
         "is_top_level": true,
         "variables": {
-            "VK_APP_ID": "5027289"
+            "CRASHLYTICS_API_KEY": "b958fa8463b9a6b1b25480a0a4c2bf015c93c94a",
+            "CRASHLYTICS_API_SECRET": "eea9687648c0c2cbf6f147cef8fe038656c82956185ab8a2a7d4b1434f9712cb"
         }
+    },
+    "ru.orangeapps.cordova-plugin-googleplaygame": {
+        "source": {
+            "type": "local",
+            "path": "../cordova-plugin-googleplaygames"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

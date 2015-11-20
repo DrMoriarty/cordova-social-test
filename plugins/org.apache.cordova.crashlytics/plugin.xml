@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      id="org.apache.cordova.crashlytics"
+      version="0.0.2-dev">
+    <name>Crashlytics</name>
+    <description>Cordova Crashlytics Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,crashlytics</keywords>
+
+    <!--engines>
+        <engine name="cordova-android" version=">=3.7.0" />
+        <engine name="cordova-ios" version=">=3.8.0" />
+    </engines-->
+
+    <preference name="CRASHLYTICS_API_KEY" />
+    <preference name="CRASHLYTICS_API_SECRET" />
+
+    <js-module src="www/crashlytics.js" name="crashlytics">
+        <clobbers target="navigator.crashlytics" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Crashlytics" >
+                <param name="android-package" value="org.apache.cordova.crashlytics.CrashlyticsPlugin"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.INTERNET" />
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="application">
+            <meta-data android:name="com.crashlytics.ApiKey" android:value="$CRASHLYTICS_API_KEY"/>
+        </config-file>
+
+        <config-file target="custom_rules.xml" parent="/*">
+            <import file="../../plugins/org.apache.cordova.crashlytics/libs/android/crashlytics_build.xml"/>
+        </config-file>
+
+        <source-file src="libs/android/crashlytics.jar" target-dir="libs" />
+
+        <source-file src="src/android/org/apache/cordova/crashlytics/CrashlyticsPlugin.java" target-dir="src/org/apache/cordova/crashlytics" />
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+        <feature name="Crashlytics">
+            <param name="ios-package" value="CrashlyticsPlugin"/>
+            <param name="onload" value="true"/>
+        </feature>
+
+        <preference name="CRASHLYTICS_API_KEY" value="$CRASHLYTICS_API_KEY"/>
+      </config-file>
+
+
+        <header-file src="src/ios/CrashlyticsPlugin.h" />
+        <source-file src="src/ios/CrashlyticsPlugin.m" />
+
+        <framework src="libc++.dylib" />
+        <framework src="libz.dylib" />
+        <framework src="libs/ios/Fabric.framework" custom="true" />
+        <framework src="libs/ios/Crashlytics.framework" custom="true" />
+
+
+        <config-file target="*-Info.plist" parent="Fabric">
+            <key>Fabric</key>
+            <dict>
+                    <key>APIKey</key>
+                    <string>$CRASHLYTICS_API_KEY</string>
+                    <key>Kits</key>
+                    <array>
+                            <dict>
+                                    <key>KitInfo</key>
+                                    <dict/>
+                                    <key>KitName</key>
+                                    <string>Crashlytics</string>
+                            </dict>
+                    </array>
+            </dict>
+        </config-file>
+    </platform>
+
+    <hook type="after_plugin_install" src="hooks/after_plugin_install.js" />
+    <hook type="before_plugin_uninstall" src="hooks/before_plugin_uninstall.js" />
+</plugin>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- From: file:/Volumes/Transcend/Users/vasya/projects/cordova-social-test/platforms/android/ru.trilan.cordova-social-vk/hellocordova-vksdk_library/res/values-w600dp/dimen.xml -->
-    <eat-comment/>
-    <dimen name="vk_share_dialog_view_padding">100dp</dimen>
-</resources>

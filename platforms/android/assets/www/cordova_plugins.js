@@ -20,17 +20,17 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/ru.trilan.cordova-social-ok/www/social-ok.js",
-        "id": "ru.trilan.cordova-social-ok.SocialOk",
+        "file": "plugins/org.apache.cordova.crashlytics/www/crashlytics.js",
+        "id": "org.apache.cordova.crashlytics.crashlytics",
         "clobbers": [
-            "SocialOk"
+            "navigator.crashlytics"
         ]
     },
     {
-        "file": "plugins/ru.trilan.cordova-social-vk/www/social-vk.js",
-        "id": "ru.trilan.cordova-social-vk.SocialVk",
+        "file": "plugins/ru.orangeapps.cordova-plugin-googleplaygame/www/GooglePlayGame.js",
+        "id": "ru.orangeapps.cordova-plugin-googleplaygame.GooglePlayGame",
         "clobbers": [
-            "SocialVk"
+            "window.plugins.googleplaygame"
         ]
     }
 ];
@@ -40,8 +40,8 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.0.0",
     "org.apache.cordova.device": "0.2.13",
     "org.apache.cordova.splashscreen": "0.3.5",
-    "ru.trilan.cordova-social-ok": "1.0.0",
-    "ru.trilan.cordova-social-vk": "1.0.0"
+    "org.apache.cordova.crashlytics": "0.0.2-dev",
+    "ru.orangeapps.cordova-plugin-googleplaygame": "0.1"
 }
 // BOTTOM OF METADATA
 });

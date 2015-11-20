@@ -72,6 +72,8 @@ function convertImgToBase64URL(url, callback, outputFormat){
     img.src = url;
 }
 
+/**************** VKontakte ********************/
+
 function testNonAuthorizedFunctions() {
     SocialVk.users_get('205387401', 'photo_50,city,verified', '', function(res) {
         success_message('VK users get', JSON.stringify(res));
@@ -173,6 +175,120 @@ function testAuthorizedFunctions(user_id) {
     }, function(err) {
         error_message('VK call API audio.search', err);
     });
+
+    SocialVk.callApiMethod('apps.sendRequest', {'user_id': 300049931, 'text': 'TEST', 'type': 'invite'}, function(res) {
+        success_message('VK call API apps.sendRequest', JSON.stringify(res));
+    }, function(err) {
+        error_message('VK call API apps.sendRequest', err);
+    });
+}
+
+function testVk() {
+    if(window.SocialVk) {
+        SocialVk.init('5027289', function() {
+            success_message('VK plugin', 'inited');
+            testNonAuthorizedFunctions();
+            SocialVk.login(['wall', 'offline', 'friends', 'audio', 'video', 'photos'], function(res) {
+                success_message('VK login', JSON.stringify(res));
+                testAuthorizedFunctions();
+            }, function(err) {
+                error_message('VK login', err);
+            });
+        }, function(err) {
+            error_message('VK plugin', err);
+        });
+    } else {
+        error_message('VK plugin', 'not found');
+    }
+}
+
+/**************** Odnoklassniki ********************/
+
+function testOkApi() {
+    SocialOk.friendsGet('', 'PRESENT', function(res) {
+        success_message('OK friendsGet', JSON.stringify(res));
+    }, function(err) {
+        error_message('OK friendsGet', err);
+    });
+
+    SocialOk.friendsGetOnline('', '', function(res) {
+        success_message('OK friendsGetOnline', JSON.stringify(res));
+    }, function(err) {
+        error_message('OK friendsGetOnline', err);
+    });
+
+    SocialOk.streamPublish([], function(res) {
+        success_message('OK streamPublish', JSON.stringify(res));
+    }, function(err) {
+        error_message('OK streamPublish', err);
+    });
+
+    SocialOk.usersGetInfo('83701871999', 'uid,first_name,last_name', function(res) {
+        success_message('OK usersGetInfo', JSON.stringify(res));
+    }, function(err) {
+        error_message('OK usersGetInfo', err);
+    });
+
+    SocialOk.callApiMethod('photosV2.getUploadUrl', {}, function(res) {
+        success_message('OK callApiMethod photosV2.getUploadUrl', JSON.stringify(res));
+    }, function(err) {
+        error_message('OK callApiMethod photosV2.getUploadUrl', err);
+    });
+}
+
+function testOk() {
+    if(window.SocialOk) {
+        SocialOk.init('1106761984', 'B3D5D2F53EDED9A0F0559416', 'CBAKNIPCEBABABABA', function() {
+            success_message('OK plugin', 'inited');
+            SocialOk.login(["VALUABLE ACCESS"], function(res) {
+                success_message('OK login', JSON.stringify(res));
+                testOkApi();
+            }, function(err) {
+                error_message('OK login', err);
+            });
+        }, function(err) {
+            error_message('OK plugin', err);
+        });
+    } else {
+        error_message('OK plugin', 'not found');
+    }
+}
+
+/**************** GooglePlayGame ********************/
+
+function testGPFunctions() {
+    window.plugins.googleplaygame.invite({'title': 'Come on!', 'message': 'Let\'s play together!', 'image': 'http://news.techgenie.com/files/playing-video-games.jpg', 'actiontext': 'GO!'}, function(res) {
+        success_message('GP invite', res);
+    }, function(err) {
+        error_message('GP invite error', err);
+    });
+}
+
+function testGP() {
+    if(window.plugins.googleplaygame) {
+        window.plugins.googleplaygame.isAvailable(function(available) {
+            if(available) {
+                success_message('GP plugin found');
+                window.plugins.googleplaygame.trySilentLogin( {'offline': false}, function(res) {
+                    success_message('GP silent login', JSON.stringify(res));
+                    testGPFunctions();
+                }, function(err) {
+                    error_message('GP silent login error', err);
+                    window.plugins.googleplaygame.login({'offline': false}, function(res) {
+                        success_message('GP login', JSON.stringify(res));
+                        testGPFunctions();
+                    }, function(err) {
+                        error_message('GP login error');
+                        testGPFunctions();
+                    });
+                });
+            } else {
+                error_message('GP plugin not available');
+            }
+        });
+    } else {
+        error_message('GP plugin', 'not found');
+    }
 }
 
 var app = {
@@ -193,31 +309,9 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        if(window.SocialVk) {
-            SocialVk.init('5027289', function() {
-                success_message('VK plugin', 'inited');
-                testNonAuthorizedFunctions();
-                SocialVk.login(['wall', 'offline', 'friends', 'audio', 'video', 'photos'], function(res) {
-                    success_message('VK login', JSON.stringify(res));
-                    testAuthorizedFunctions();
-                }, function(err) {
-                    error_message('VK login', err);
-                });
-            }, function(err) {
-                error_message('VK plugin', err);
-            });
-        } else {
-            error_message('VK plugin', 'not found');
-        }
-        if(window.SocialOk) {
-            SocialOk.init('198971648', '46B5A159EC2760CBD51CD645', 'CBACBNNMABABABABA', function() {
-                success_message('OK plugin', 'inited');
-            }, function(err) {
-                error_message('OK plugin', err);
-            });
-        } else {
-            error_message('OK plugin', 'not found');
-        }
+        //testVk();
+        testOk();
+        //testGP();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
