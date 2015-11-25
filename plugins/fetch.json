@@ -30,12 +30,24 @@
             "CRASHLYTICS_API_SECRET": "eea9687648c0c2cbf6f147cef8fe038656c82956185ab8a2a7d4b1434f9712cb"
         }
     },
-    "ru.orangeapps.cordova-plugin-googleplaygame": {
+    "ru.trilan.cordova-social-ok": {
         "source": {
             "type": "local",
-            "path": "../cordova-plugin-googleplaygames"
+            "path": "..\\cordova-social-ok"
         },
         "is_top_level": true,
-        "variables": {}
+        "variables": {
+            "VK_APP_ID": "5027289"
+        }
+    },
+    "ru.trilan.cordova-social-vk": {
+        "source": {
+            "type": "local",
+            "path": "..\\cordova-social-vk"
+        },
+        "is_top_level": true,
+        "variables": {
+            "VK_APP_ID": "5027289"
+        }
     }
 }

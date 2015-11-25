@@ -1,0 +1,25 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "{2c5c9ad0-8f45-11e5-b90f-2f02d98bef5f}"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "{2c5c9ad0-8f45-11e5-b90f-2f02d98bef5f}"
+        },
+        "org.apache.cordova.splashscreen": {
+            "PACKAGE_NAME": "{2c5c9ad0-8f45-11e5-b90f-2f02d98bef5f}"
+        },
+        "ru.trilan.cordova-social-vk": {
+            "VK_APP_ID": "5027289",
+            "PACKAGE_NAME": "{2c5c9ad0-8f45-11e5-b90f-2f02d98bef5f}"
+        }
+    },
+    "dependent_plugins": {}
+}
