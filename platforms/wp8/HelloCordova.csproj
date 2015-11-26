@@ -233,13 +233,13 @@
         <Compile Include="Plugins\ru.trilan.cordova-social-vk\SocialVk.cs" />
     </ItemGroup>
     <ItemGroup>
-        <Reference Include="Newtonsoft.Json">
-            <HintPath>plugins\ru.trilan.cordova-social-vk\Newtonsoft.Json.dll</HintPath>
+        <Reference Include="VK.WindowsPhone.SDK">
+            <HintPath>plugins\ru.trilan.cordova-social-vk\VK.WindowsPhone.SDK.dll</HintPath>
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Reference Include="VK.WindowsPhone.SDK">
-            <HintPath>plugins\ru.trilan.cordova-social-vk\VK.WindowsPhone.SDK.dll</HintPath>
+        <Reference Include="Newtonsoft.Json">
+            <HintPath>plugins\phonegap-facebook-plugin\Newtonsoft.Json.dll</HintPath>
         </Reference>
     </ItemGroup>
 </Project>
