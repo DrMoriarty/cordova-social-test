@@ -119,7 +119,7 @@ function testAuthorizedFunctions(user_id) {
     }, function(err) {
         error_message('VK wall post', err);
     });
-
+    
     SocialVk.photos_getUploadServer(169819278, 37273781, function(res) {
         success_message('VK photos getUploadServer', JSON.stringify(res));
     }, function(err) {
@@ -131,7 +131,7 @@ function testAuthorizedFunctions(user_id) {
     }, function(err) {
         error_message('VK photos getWallUploadServer', err);
     });
-
+    
     convertImgToBase64URL('img/logo.png', function(base64Img) {
         SocialVk.photos_saveWallPhoto(base64Img, user_id, 0, function(res) {
             success_message('VK photos saveWallPhoto', JSON.stringify(res));
@@ -181,19 +181,22 @@ function testAuthorizedFunctions(user_id) {
     }, function(err) {
         error_message('VK call API apps.sendRequest', err);
     });
+    
 }
 
 function testVk() {
     if(window.SocialVk) {
         SocialVk.init('5027289', function() {
             success_message('VK plugin', 'inited');
-            testNonAuthorizedFunctions();
+            //testNonAuthorizedFunctions();
+            
             SocialVk.login(['wall', 'offline', 'friends', 'audio', 'video', 'photos'], function(res) {
                 success_message('VK login', JSON.stringify(res));
                 testAuthorizedFunctions();
             }, function(err) {
                 error_message('VK login', err);
             });
+            
         }, function(err) {
             error_message('VK plugin', err);
         });
@@ -291,6 +294,20 @@ function testGP() {
     }
 }
 
+/**************** FacebookConnect ********************/
+
+function testFB() {
+    if (window.facebookConnectPlugin) {
+        facebookConnectPlugin.login(["email"], function (res) {
+            success_message('FB login', JSON.stringify(res));
+        }, function (err) {
+            error_message('FB login error', err);
+        });
+    } else {
+        error_message('FB plugin', 'not found');
+    }
+}
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -309,9 +326,10 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        //testVk();
-        testOk();
+        testVk();
+        //testOk();
         //testGP();
+        //testFB()
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

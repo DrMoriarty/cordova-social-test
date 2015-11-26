@@ -16,8 +16,6 @@ C:\Users\Василий\cordova-social-test\platforms\wp8\Bin\Debug\Properties\W
 C:\Users\Василий\cordova-social-test\platforms\wp8\Bin\Debug\CordovaAppProj_Debug_AnyCPU.xap
 C:\Users\Василий\cordova-social-test\platforms\wp8\Bin\Debug\Newtonsoft.Json.dll
 C:\Users\Василий\cordova-social-test\platforms\wp8\Bin\Debug\VK.WindowsPhone.SDK.dll
-C:\Users\Василий\cordova-social-test\platforms\wp8\Bin\Debug\VK.WindowsPhone.SDK.pdb
-C:\Users\Василий\cordova-social-test\platforms\wp8\Bin\Debug\ru-RU\VK.WindowsPhone.SDK.resources.dll
 C:\Users\Василий\cordova-social-test\platforms\wp8\obj\Debug\HelloCordova.csprojResolveAssemblyReference.cache
 C:\Users\Василий\cordova-social-test\platforms\wp8\obj\Debug\App.g.cs
 C:\Users\Василий\cordova-social-test\platforms\wp8\obj\Debug\cordovalib\CordovaView.g.cs

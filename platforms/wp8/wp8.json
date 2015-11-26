@@ -38,6 +38,11 @@
                         }
                     ]
                 }
+            },
+            "FacebookConfig.xml": {
+                "parents": {
+                    "/Extensions": []
+                }
             }
         }
     },

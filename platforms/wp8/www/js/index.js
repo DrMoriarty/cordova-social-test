@@ -294,6 +294,20 @@ function testGP() {
     }
 }
 
+/**************** FacebookConnect ********************/
+
+function testFB() {
+    if (window.facebookConnectPlugin) {
+        facebookConnectPlugin.login(["email"], function (res) {
+            success_message('FB login', JSON.stringify(res));
+        }, function (err) {
+            error_message('FB login error', err);
+        });
+    } else {
+        error_message('FB plugin', 'not found');
+    }
+}
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -315,6 +329,7 @@ var app = {
         testVk();
         //testOk();
         //testGP();
+        //testFB()
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
